@@ -34,6 +34,10 @@ body {
     animation: move 20s linear infinite;
 }
 
+.animation span:hover {
+    animation-play-state: paused;
+}
+
 @keyframes move {
     0% {
         transform: translateX(0%);
