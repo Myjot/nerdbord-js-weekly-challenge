@@ -34,7 +34,7 @@ body {
     animation: move 20s linear infinite;
 }
 
-.animation span:hover {
+.animation:hover span {
     animation-play-state: paused;
 }
 
