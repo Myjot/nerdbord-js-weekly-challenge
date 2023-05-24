@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <style>
     /*Your CSS code here*/
     body {
@@ -34,7 +33,6 @@
         opacity: 0;
         visibility: hidden;
     }
-
     @keyframes bounce {
         0% {
             transform: scale(0);
@@ -54,7 +52,6 @@
         animation-name: bounce;
         visibility: visible;
     }
-
     .rectangle .text {
         font-family: 'Work Sans';
         font-style: normal;
@@ -85,9 +82,7 @@
         color: #6A6EF7;
         transition-delay:.1s;
     }
-
 </style>
-
 <body>
 <script>
     function showModal() {
@@ -98,14 +93,12 @@
             document.body.addEventListener('click', outsideModalClick);
         }, 100);
     }
-
     function hideModal() {
         var modal = document.getElementById('modal');
         modal.classList.remove('show');
         document.body.style.backgroundColor = 'white';
         document.body.removeEventListener('click', outsideModalClick);
     }
-
     function outsideModalClick(event) {
         var modal = document.getElementById('modal');
         if (!modal.contains(event.target)) {
@@ -121,7 +114,5 @@
     <div class="text">Pop me up like one of your bubble wraps.</div>
     <div class="button"><button onclick="showModal()">pop it!</button></div>
 </div>
-
 </body>
-
 </html>
